@@ -1,11 +1,11 @@
 import React from 'react'
-import { useMyHook } from 'react-configurational-hooks'
+import { useOS } from 'react-configurational-hooks'
 
 const App = () => {
-  const example = useMyHook()
+  const os = useOS();
   return (
     <div>
-      {example}
+      Your host : {os}
     </div>
   )
 }

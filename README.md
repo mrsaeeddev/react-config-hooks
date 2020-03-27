@@ -13,12 +13,13 @@ npm install --save react-configurational-hooks
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
 
-import { useMyHook } from 'react-configurational-hooks'
+### Hook for OS Detection
+
+import { useOS } from 'react-configurational-hooks'
 
 const Example = () => {
-  const example = useMyHook()
+  const os = useOS()
   return (
     <div>{example}</div>
   )
@@ -29,6 +30,3 @@ const Example = () => {
 
 MIT © [dev-saeed](https://github.com/dev-saeed)
 
----
-
-This hook is created using [create-react-hook](https://github.com/hermanya/create-react-hook).
