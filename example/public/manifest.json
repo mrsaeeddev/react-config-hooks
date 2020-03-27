@@ -1,0 +1,8 @@
+{
+  "short_name": "react-configurational-hooks",
+  "name": "react-configurational-hooks",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
