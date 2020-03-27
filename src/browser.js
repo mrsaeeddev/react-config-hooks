@@ -1,22 +1,35 @@
 import { useState, useEffect } from 'react'
 
 export const useBrowser = () => {
-  let [os, setOS] = useState("unknown")
+  let [browser, setBrowser] = useState("unknown")
 
-  function checkOS() {
-    if (navigator.appVersion.indexOf("Win") != -1) 
-        setOS("Windows OS");
-    if (navigator.appVersion.indexOf("Mac") != -1)
-        setOS("Mac");
-    if (navigator.appVersion.indexOf("X11") != -1) 
-        setOS("UNIX OS"); 
-    if (navigator.appVersion.indexOf("Linux") != -1) 
-        setOS("Linux OS"); 
+  function checkBrowser() {
+    if (navigator.userAgent.indexOf("Chrome") != -1 ) {
+        setBrowser("Google Chrome");
+      }
+      else if (navigator.userAgent.indexOf("Firefox") != -1 ) {
+        setBrowser("Mozilla Firefox");
+      }
+      else if (navigator.userAgent.indexOf("MSIE") != -1 ) {
+        setBrowser("Internet Exploder");
+      }
+      else if (navigator.userAgent.indexOf("Edge") != -1 ) {
+        setBrowser("Internet Exploder");
+      }
+      else if (navigator.userAgent.indexOf("Safari") != -1 ) {
+        setBrowser("Safari");
+      }
+      else if (navigator.userAgent.indexOf("Opera") != -1 ) {
+        setBrowser("Opera");
+      }
+      else if (navigator.userAgent.indexOf("Opera") != -1 ) {
+        setBrowser("Yandex Browser");
+      }
   }
 
   useEffect(() => {
-      checkOS();
+      checkBrowser();
   }, [])
 
-  return os
+  return browser
 }

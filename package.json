@@ -1,7 +1,7 @@
 {
   "name": "react-configurational-hooks",
   "version": "1.0.0",
-  "description": "Deliver experiences best suited to a user&#x27;s OS, device type, browser and other configurational things",
+  "description": "Deliver experiences best suited to a user's OS, device type, browser and other configurational things",
   "author": "dev-saeed",
   "license": "MIT",
   "repository": "dev-saeed/react-configurational-hooks",
