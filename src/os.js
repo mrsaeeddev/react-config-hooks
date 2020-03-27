@@ -13,10 +13,8 @@ export const useOS = () => {
     if (navigator.appVersion.indexOf("Linux") != -1) 
         setOS("Linux OS"); 
     if ((navigator.appVersion.indexOf("Android") || navigator.appVersion.indexOf("android")) != -1)
-        setOS("Android");
-    if ((navigator.appVersion.indexOf("Apple") || navigator.appVersion.indexOf("apple")) != -1)
-        setOS("iOS");
-  }
+        setOS("Android");  
+    }
 
   useEffect(() => {
       checkOS();
