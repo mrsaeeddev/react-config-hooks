@@ -1,1 +1,1 @@
-This is example repo for the usage of `react-configurational-hooks`.
+This is example repo for the usage of `react-config-hooks`.

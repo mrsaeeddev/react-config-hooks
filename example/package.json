@@ -1,6 +1,6 @@
 {
-  "name": "react-configurational-hooks-example",
-  "homepage": "https://dev-saeed.github.io/react-configurational-hooks",
+  "name": "react-config-hooks-example",
+  "homepage": "https://dev-saeed.github.io/react-config-hooks",
   "version": "0.0.0",
   "license": "MIT",
   "private": true,
@@ -9,7 +9,7 @@
     "react": "link:../node_modules/react",
     "react-dom": "^16.9.0",
     "react-scripts": "^3.0.1",
-    "react-configurational-hooks": "link:.."
+    "react-config-hooks": "link:.."
   },
   "scripts": {
     "start": "react-scripts start",

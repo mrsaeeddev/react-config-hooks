@@ -1,10 +1,10 @@
 {
-  "name": "react-configurational-hooks",
+  "name": "react-config-hooks",
   "version": "1.0.0",
-  "description": "Deliver experiences best suited to a user's OS, device type, browser and other configurational things",
+  "description": "Deliver experiences best suited to a user's OS, device type, browser and other things",
   "author": "dev-saeed",
   "license": "MIT",
-  "repository": "dev-saeed/react-configurational-hooks",
+  "repository": "dev-saeed/react-config-hooks",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",

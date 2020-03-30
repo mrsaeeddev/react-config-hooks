@@ -1,8 +1,8 @@
-# react-configurational-hooks
+# react-config-hooks
 
-> Deliver experiences best suited to a user&#x27;s OS, device type, browser, and other configurational things
+> Deliver experiences best suited to a user&#x27;s OS, device type, browser, and other things
 
-[![NPM](https://img.shields.io/npm/v/react-configurational-hooks.svg)](https://www.npmjs.com/package/react-configurational-hooks) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/react-config-hooks.svg)](https://www.npmjs.com/package/react-config-hooks) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 This is a suite of [React Hooks](https://reactjs.org/docs/hooks-overview.html) and utilities for adaptive loading based on a user's:
 - Operating System
@@ -10,12 +10,12 @@ This is a suite of [React Hooks](https://reactjs.org/docs/hooks-overview.html) a
 - Configuration
 
 ## Objective
-Make it easier for developer to target different devices based on their configuration. It can be used to check different configurational settings in order to deliver best experiences to user.  
+Make it easier for developer to target different devices based on their configuration. It can be used to check different settings related to config in order to deliver best experiences to user.  
 
 ## Install
 
 ```bash
-npm install --save react-configurational-hooks
+npm install --save react-config-hooks
 ```
 
 ## Usage
@@ -25,7 +25,7 @@ npm install --save react-configurational-hooks
 ### Operating System
 
 ```jsx
-import { useOS } from 'react-configurational-hooks'
+import { useOS } from 'react-config-hooks'
 
 const [ os,isWin,isMac,isUnix,isLinux,isWinMob,isAndroid,isiOS ] = useOS()
  
@@ -48,7 +48,7 @@ ___
 ### Browser
 
 ```jsx
-import { useBrowser } from 'react-configurational-hooks'
+import { useBrowser } from 'react-config-hooks'
 
 const [ browser,isChrome,isFirefox,isIE,isEdge,isSafari,isOpera,isYandex ] = useBrowser()
  
@@ -71,7 +71,7 @@ ___
 ### Config
 
 ```jsx
-import { useConfig } from 'react-configurational-hooks'
+import { useConfig } from 'react-config-hooks'
 
 const [ deviceConfig,isCookieEnabled ] = useConfig()
  
