@@ -1,3 +1,3 @@
 export { useOS } from './os';
-export { useDevice } from './device';
+export { useConfig } from './config';
 export { useBrowser } from './browser';

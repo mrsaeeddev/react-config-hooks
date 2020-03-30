@@ -1,9 +1,10 @@
 import React from 'react'
-import { useOS, useBrowser } from 'react-configurational-hooks'
+import { useOS, useBrowser,useConfig } from 'react-configurational-hooks'
 
 const App = () => {
   const [os,isWin,isMac,isUnix,isLinux,isWinMob,isAndroid,isiOS] = useOS();
   const [browser,isChrome,isFirefox,isIE,isEdge,isSafari,isOpera,isYandex] = useBrowser();
+  const [deviceConfig,isCookieEnabled] = useConfig();
   return (
     <div>
       <h2>OS Configuration</h2>
@@ -25,6 +26,9 @@ const App = () => {
       {isSafari && <div>This is Safari</div>}
       {isOpera && <div>This is Opera</div>}
       {isYandex && <div>This is Yandex</div>}
+      <br />
+      <h2>Device Configuration</h2>
+      <h4>Your browser has cookies enabled : {isCookieEnabled ? "true":"false"}</h4>
     </div>
   )
 }
