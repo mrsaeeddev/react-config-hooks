@@ -4,7 +4,7 @@
 
 [![NPM](https://img.shields.io/npm/v/react-config-hooks.svg)](https://www.npmjs.com/package/react-config-hooks)[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Inline docs](http://inch-ci.org/github/dev-saeed/react-config-hooks.svg?branch=master)](http://inch-ci.org/github/dev-saeed/neumorphic-ui) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
 
-This is a suite of [React Hooks](https://reactjs.org/docs/hooks-overview.html) and utilities for adaptive loading based on a user's:
+This is a suite of [React Hooks](https://reactjs.org/docs/hooks-overview.html) and utilities for loading based on a user's:
 - Operating System
 - Browser
 - Configuration
