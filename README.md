@@ -73,14 +73,18 @@ ___
 ```jsx
 import { useConfig } from 'react-config-hooks'
 
-const [ deviceConfig,isCookieEnabled ] = useConfig()
+const [ deviceConfig,isCookieEnabled,isOnLine,knownLangs,prefLang,isJavaEnabled ] = useConfig()
  
 ```
 
 |  Value   |      Returns        |  Return type |
 |----------|:-------------------:|------:|
-|    `deviceConfig`    | Returns the different properties related to config | object |
+|    `deviceConfig`    | Returns the different properties (`isCookieEnabled`,`isOnLine`,`knownLangs`,`prefLang`,`isJavaEnabled`) related to config | Arrays of objects |
 | `isCookieEnabled` | Returns true if cookie is enabled and vice versa        |   boolean |
+| `isOnLine` | Returns true if user is online and vice versa        |   boolean |
+| `knownLangs` | Returns an array representing the languages known to the user, by order of preference |   array |
+| `prefLang` | Returns an string representing the preferred language of the user, usually the language of the browser UI. The null value is returned when this is unknown.  |  String |
+| `isJavaEnabled` | Returns true if Java is enabled and vice versa        |   boolean |
 
 &nbsp;
 

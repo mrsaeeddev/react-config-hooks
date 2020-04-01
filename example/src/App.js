@@ -4,7 +4,7 @@ import { useOS, useBrowser,useConfig } from 'react-config-hooks'
 const App = () => {
   const [os,isWin,isMac,isUnix,isLinux,isWinMob,isAndroid,isiOS] = useOS();
   const [browser,isChrome,isFirefox,isIE,isEdge,isSafari,isOpera,isYandex] = useBrowser();
-  const [deviceConfig,isCookieEnabled] = useConfig();
+  const [deviceConfig,isCookieEnabled,isOnLine,knownLangs,prefLang,isJavaEnabled] = useConfig();
   return (
     <div>
       <h2>OS Configuration</h2>
@@ -29,6 +29,10 @@ const App = () => {
       <br />
       <h2>Device Configuration</h2>
       <h4>Your browser has cookies enabled : {isCookieEnabled ? "true":"false"}</h4>
+      <div>You are connected to internet : {isOnLine ? "true":"false"}</div>
+      <div>Your known languages are : {knownLangs!=="unknown" && knownLangs.map((v,i)=><span key={i}>{v+'\n'}</span>)}</div>
+      <div>Your preferred language is : {prefLang !== "unknown" && prefLang}</div>
+      <div>You have Java Enabled : {isJavaEnabled ? "true":"false"}</div>
     </div>
   )
 }
